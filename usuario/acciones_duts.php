@@ -123,5 +123,6 @@
             http_response_code(200);
             exit;
         }
-
+// Si no coincide con ningún método de solicitud, devolver Bad Request
+    header("HTTP/1.1 400 Bad Request");
 ?>

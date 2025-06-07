@@ -57,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     echo json_encode(['mensaje' => 'Te has dado de baja del evento']);
     exit;
 }
-
+// Si no coincide con ningún método de solicitud, devolver Bad Request
+    header("HTTP/1.1 400 Bad Request");
 
 ?>
