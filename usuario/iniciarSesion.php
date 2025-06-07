@@ -3,7 +3,7 @@
         $conexion = new Conexion();
         $pdo = $conexion->obtenerConexion();
 
-
+        //iniciar sesion
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             // Verificar si los parámetros obligatorios están presentes
